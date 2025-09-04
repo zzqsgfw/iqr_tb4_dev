@@ -9,10 +9,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     # 获取各功能包路径
-    iqr_tb4_bringup_dir = FindPackageShare(package="iqr_tb4_ros").find(
-        "iqr_tb4_bringup"
-    )
-    # iqr_tb4_bringup_dir = get_package_share_directory("iqr_tb4_bringup")
+    iqr_tb4_bringup_dir = get_package_share_directory("iqr_tb4_bringup")
     turtlebot4_navigation_dir = get_package_share_directory("turtlebot4_navigation")
     turtlebot4_viz_dir = get_package_share_directory("turtlebot4_viz")
 
@@ -22,7 +19,6 @@ def generate_launch_description():
             [PathJoinSubstitution([iqr_tb4_bringup_dir, "launch", "bringup.launch.py"])]
         ),
     )
- 
  
     # 2
     localization_launch = IncludeLaunchDescription(
@@ -35,7 +31,7 @@ def generate_launch_description():
         ),
         launch_arguments={
             "map": "src/my_nav/map/empty_classroom.yaml",
-            "params_file": "src/iqr_tb4_ros/iqr_tb4_navigation/config/localization.yaml",
+            "params_file": "src/my_nav/config/localization.yaml",
         }.items(),
     )
 
@@ -50,7 +46,7 @@ def generate_launch_description():
         ),
         launch_arguments={
             "use_sim_time": "false",
-            "params_file": "src/iqr_tb4_ros/iqr_tb4_navigation/config/nav2.yaml",
+            "params_file": "src/my_nav/config/nav2.yaml",
         }.items(),
     )
 
