@@ -1,0 +1,34 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/tony/ros2_ws/install/ros2_aruco_interfaces/include/**",
+        "/home/tony/ros2_ws/install/realsense2_camera/include/**",
+        "/home/tony/ros2_ws/install/realsense2_camera_msgs/include/**",
+        "/home/tony/ros2_ws/install/pan_tilt_msgs/include/**",
+        "/home/tony/ros2_ws/install/interbotix_xs_rviz/include/**",
+        "/home/tony/ros2_ws/install/interbotix_xs_ros_control/include/**",
+        "/home/tony/ros2_ws/install/interbotix_xs_msgs/include/**",
+        "/home/tony/ros2_ws/install/interbotix_xs_driver/include/**",
+        "/home/tony/ros2_ws/install/interbotix_perception_msgs/include/**",
+        "/home/tony/ros2_ws/install/interbotix_moveit_interface_msgs/include/**",
+        "/home/tony/ros2_ws/install/dynamixel_workbench_toolbox/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/tony/zzq_ws/src/iqr_tb4_ros/iqr_tb4_bringup/include/**",
+        "/home/tony/zzq_ws/src/iqr_tb4_ros/iqr_tb4_description/include/**",
+        "/home/tony/zzq_ws/src/scan_map/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

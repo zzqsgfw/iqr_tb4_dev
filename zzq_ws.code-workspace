@@ -1,0 +1,49 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.autoComplete.extraPaths": [
+			"/home/tony/zzq_ws/install/my_nav/lib/python3.10/site-packages",
+			"/home/tony/ros2_ws/install/yolov10_inference/lib/python3.10/site-packages",
+			"/home/tony/ros2_ws/install/witmotion_ros_driver/lib/python3.10/site-packages",
+			"/home/tony/ros2_ws/install/turtlebot3_teleop/lib/python3.10/site-packages",
+			"/home/tony/ros2_ws/install/turtlebot3_example/lib/python3.10/site-packages",
+			"/home/tony/ros2_ws/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages",
+			"/home/tony/ros2_ws/install/ros2_aruco/lib/python3.10/site-packages",
+			"/home/tony/ros2_ws/install/interbotix_perception_modules/lib/python3.10/site-packages",
+			"/home/tony/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages",
+			"/home/tony/ros2_ws/install/pan_tilt_msgs/local/lib/python3.10/dist-packages",
+			"/home/tony/ros2_ws/install/opencv_pkg/lib/python3.10/site-packages",
+			"/home/tony/ros2_ws/install/interbotix_xs_modules/lib/python3.10/site-packages",
+			"/home/tony/ros2_ws/install/interbotix_xs_msgs/local/lib/python3.10/dist-packages",
+			"/home/tony/ros2_ws/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages",
+			"/home/tony/ros2_ws/install/interbotix_moveit_interface_msgs/local/lib/python3.10/dist-packages",
+			"/home/tony/ros2_ws/install/interbotix_common_modules/lib/python3.10/site-packages",
+			"/opt/ros/humble/lib/python3.10/site-packages",
+			"/opt/ros/humble/local/lib/python3.10/dist-packages"
+		],
+		"python.analysis.extraPaths": [
+			"/home/tony/zzq_ws/install/my_nav/lib/python3.10/site-packages",
+			"/home/tony/ros2_ws/install/yolov10_inference/lib/python3.10/site-packages",
+			"/home/tony/ros2_ws/install/witmotion_ros_driver/lib/python3.10/site-packages",
+			"/home/tony/ros2_ws/install/turtlebot3_teleop/lib/python3.10/site-packages",
+			"/home/tony/ros2_ws/install/turtlebot3_example/lib/python3.10/site-packages",
+			"/home/tony/ros2_ws/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages",
+			"/home/tony/ros2_ws/install/ros2_aruco/lib/python3.10/site-packages",
+			"/home/tony/ros2_ws/install/interbotix_perception_modules/lib/python3.10/site-packages",
+			"/home/tony/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages",
+			"/home/tony/ros2_ws/install/pan_tilt_msgs/local/lib/python3.10/dist-packages",
+			"/home/tony/ros2_ws/install/opencv_pkg/lib/python3.10/site-packages",
+			"/home/tony/ros2_ws/install/interbotix_xs_modules/lib/python3.10/site-packages",
+			"/home/tony/ros2_ws/install/interbotix_xs_msgs/local/lib/python3.10/dist-packages",
+			"/home/tony/ros2_ws/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages",
+			"/home/tony/ros2_ws/install/interbotix_moveit_interface_msgs/local/lib/python3.10/dist-packages",
+			"/home/tony/ros2_ws/install/interbotix_common_modules/lib/python3.10/site-packages",
+			"/opt/ros/humble/lib/python3.10/site-packages",
+			"/opt/ros/humble/local/lib/python3.10/dist-packages"
+		]
+	}
+}
