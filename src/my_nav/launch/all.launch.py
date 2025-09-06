@@ -5,7 +5,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import PathJoinSubstitution
 from launch_ros.substitutions import FindPackageShare
 from ament_index_python.packages import get_package_share_directory
-
+from launch_ros.actions import SetParameter
 
 def generate_launch_description():
     # 获取各功能包路径
@@ -29,9 +29,9 @@ def generate_launch_description():
                 )
             ]
         ),
-        launch_arguments={
-            "map": "src/my_nav/map/empty_classroom.yaml",
-            "params_file": "src/my_nav/config/localization.yaml",
+        launch_arguments={            
+            "map": "src/my_nav/map/empty_classroom.yaml",     
+            # "params_file": "src/my_nav/config/localization.yaml",
         }.items(),
     )
 
@@ -45,8 +45,8 @@ def generate_launch_description():
             ]
         ),
         launch_arguments={
-            "use_sim_time": "false",
-            "params_file": "src/my_nav/config/nav2.yaml",
+            "params_file": "/opt/ros/humble/share/turtlebot4_navigation/config/nav2.yaml",
+            # params_file": "src/my_nav/config/nav2.yaml",
         }.items(),
     )
 
@@ -70,6 +70,7 @@ def generate_launch_description():
 
     return LaunchDescription(
         [
+            # SetParameter(name='use_sim_time', value=True),
             iqr_tb4_bringup_launch,
             localization_launch,
             nav2_launch,
