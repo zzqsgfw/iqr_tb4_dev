@@ -34,7 +34,6 @@ def generate_launch_description():
             # "params_file": "src/my_nav/config/localization.yaml",
         }.items(),
     )
-
     # 3
     nav2_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
