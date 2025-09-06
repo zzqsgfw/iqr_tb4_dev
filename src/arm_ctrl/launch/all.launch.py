@@ -10,6 +10,8 @@ def generate_launch_description():
     # 获取各功能包路径
     iqr_tb4_bringup_dir = get_package_share_directory("iqr_tb4_bringup")
     arm_ctrl_dir = get_package_share_directory("arm_ctrl")
+    turtlebot4_viz_dir = get_package_share_directory("turtlebot4_viz")
+
 
     # 1
     iqr_tb4_bringup_launch = IncludeLaunchDescription(
@@ -22,12 +24,20 @@ def generate_launch_description():
     test_demo_launch = Node(
                 package="arm_ctrl",
                 executable="test_demo",
-                name="None",
+                name="ArmController",
             )
 
+    rviz_node = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        arguments=['-d', os.path.join(arm_ctrl_dir, 'rviz', 'default.rviz')],
+        output='screen'
+    )
     return LaunchDescription(
         [
             iqr_tb4_bringup_launch,
             test_demo_launch,
+            rviz_node,
         ]
     )
