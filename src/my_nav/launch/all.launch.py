@@ -44,7 +44,7 @@ def generate_launch_description():
             ]
         ),
         launch_arguments={
-            # "params_file": "/opt/ros/humble/share/turtlebot4_navigation/config/nav2.yaml",
+            "params_file": "/opt/ros/humble/share/turtlebot4_navigation/config/nav2.yaml",
             # params_file": "src/my_nav/config/nav2.yaml",
         }.items(),
     )
