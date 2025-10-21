@@ -36,16 +36,16 @@ class ArmController(Node):
             self._joint_pos.clear()
             for i in range(4):
                 self._joint_pos.append(msg.position[i])
-
-            self.get_logger().info("\nReceived joint states:\n"
-                f"- waist: {msg.position[0]}\n"
-                f"- shoulder: {msg.position[1]}\n"
-                f"- elbow: {msg.position[2]}\n"
-                f"- wrist_angle: {msg.position[3]}\n"
-                f"- gripper: {msg.position[4]}\n"
-                f"- left_finger: {msg.position[5]}\n"
-                f"- right_finger: {msg.position[6]}"
-            )
+                if self._cnt % 100 == 0:
+                    self.get_logger().info("\nReceived joint states:\n"
+                        f"- waist: {msg.position[0]}\n"
+                        f"- shoulder: {msg.position[1]}\n"
+                        f"- elbow: {msg.position[2]}\n"
+                        f"- wrist_angle: {msg.position[3]}\n"
+                        f"- gripper: {msg.position[4]}\n"
+                        f"- left_finger: {msg.position[5]}\n"
+                        f"- right_finger: {msg.position[6]}"
+                    )
        # else:
             # self.get_logger().warn(f"Unexpected joint states length: {len(msg.name)}")
 

@@ -8,7 +8,7 @@ import select
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
-dev = '/dev/input/js1' # nomachine will occupy the jso
+dev = '/dev/input/js0' # nomachine will occupy the jso
 
 class JoystickReader:
     def __init__(self, device=dev):
